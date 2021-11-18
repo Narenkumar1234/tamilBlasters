@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "650628345582",
+    "project_id": "notification-app-f120b",
+    "storage_bucket": "notification-app-f120b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650628345582:android:43b4f6ebdd370af7030dff",
+        "android_client_info": {
+          "package_name": "com.example.notification_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650628345582-p4e7bsgkkbkj3ikasq5bu4heb155uv0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTUfPJh_bTQ9kpcKVuW6isCpexD-YvoXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650628345582-p4e7bsgkkbkj3ikasq5bu4heb155uv0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
