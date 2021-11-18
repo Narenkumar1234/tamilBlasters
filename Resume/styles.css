@@ -1,0 +1,52 @@
+.left-split{
+    width: 20%;
+    height: 758px;
+    float: left;
+    background-color: #EAE2B6;
+    border-collapse: collapse;
+}
+.right-split{
+  width: 80%;
+  height: 100%;
+  position: relative;
+  float: right;
+  background-color: #BCFFB9;
+  border-collapse: collapse;
+  text-align: center;
+}
+p{
+padding-left: 10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,h2,h3,h4,h6{
+font-family: 'Roboto Slab', serif;
+padding-left: 5%;
+}
+h5{
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+  margin: 0;
+  padding-left: 5%;
+}
+body{
+  margin: 0;
+}
+table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-width: thin;
+  text-align: center;
+  padding: 2%;
+}
+.Education{
+  padding: 3%;
+}
+.project{
+padding: 0 22.5% 3.2% 22.5%;
+}
+th{
+  font-family: 'Roboto Slab', serif;
+}
+td{
+  font-family: 'Ubuntu', sans-serif;
+}

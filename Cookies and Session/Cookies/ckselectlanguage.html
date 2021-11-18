@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cookies Example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            p {font-size: 20px;}
+        </style>
+    </head>
+    <body>
+        <form action="NewServlet" method="post">
+            <a href = "NewServlet">
+                <p>Items in the Shopping Cart </p>
+            </a>
+            <p>Buy a book:</p>
+            <p>
+                <input type = "radio" name = "booktitle" value = "LetusC" /> LetusC <br/>
+                <input type = "radio" name = "booktitle" value = "MasteringC++" /> MasteringC++ <br/>
+                <input type = "radio" name = "booktitle" value = "IntroductiontoDatabases" checked="checked" /> IntroductiontoDatabases <br/>
+                <input type = "radio" name = "booktitle" value = "NetworkProgramming" />NetworkProgramming <br />
+                <input type="radio" name="booktitle" value="Javacomplete" />JavaCompleteReference<br/>
+                <input type ="submit" value="ADD TO CART" />
+            </p>
+        </form>    
+    </body>
+</html>

@@ -1,0 +1,121 @@
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted</title>
+</head>
+<style media="screen">
+table{
+  width:100%;
+  text-align: center;
+  border: 1px solid black;
+}
+p{
+  padding-bottom: 3%;
+  padding-top: 1%;
+}
+</style>
+<body>
+    <div style="background-color:rgba(116, 224, 174, 0.541); padding: 10%; text-align: left;">
+
+      <table>
+        <tr>
+          <th>S.NO.</th>
+          <th>Item Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td id="one"></td>
+          <td id="product-1"></td>
+          <td id="quantity-1"></td>
+          <td id="sum-1"></td>
+        </tr>
+        <tr>
+          <td id="two"></td>
+          <td id="product-2"></td>
+          <td id="quantity-2"></td>
+          <td id="sum-2"></td>
+        </tr>
+
+        <tr>
+          <td id="three"></td>
+          <td id="product-3"></td>
+          <td id="quantity-3"></td>
+          <td id="sum-3"></td>
+        </tr>
+
+        <tr>
+          <td id="four"></td>
+          <td id="product-4"></td>
+          <td id="quantity-4"></td>
+          <td id="sum-4"></td>
+        </tr>
+    </div>
+    <center>
+    <h1 id="total">Total Price:</h1>
+    <h1 id="Discount">Price after Discount:</h1>
+    <p>order summary</p></center>
+
+
+</body>
+<script type="text/javascript">
+  console.log("Hello");
+  var p1,p2,p3,p4;
+  var s1,s2,s3,s4;
+  var q1,q2,q3,q4;
+  var count=1;
+  q1 = localStorage.getItem("Quantity1");
+  if(q1!=0){
+    document.getElementById("one").innerHTML=count++;
+    p1=localStorage.getItem("Product1");
+    document.getElementById("product-1").innerHTML=p1;
+    document.getElementById("quantity-1").innerHTML=q1;
+    s1=localStorage.getItem("Sum1");
+    document.getElementById("sum-1").innerHTML=s1;
+  }
+  q2 = localStorage.getItem("Quantity2");
+  if(q2!=0){
+  document.getElementById("two").innerHTML=count++;
+    p2=localStorage.getItem("Product2");
+    document.getElementById("product-2").innerHTML=p2;
+    document.getElementById("quantity-2").innerHTML=q2;
+    s2=localStorage.getItem("Sum2");
+    document.getElementById("sum-2").innerHTML=s2;
+  }
+  q3 = localStorage.getItem("Quantity3");
+  if(q3!=0){
+    document.getElementById("three").innerHTML=count++;
+    p3=localStorage.getItem("Product3");
+    document.getElementById("product-3").innerHTML=p3;
+    document.getElementById("quantity-3").innerHTML=q3;
+    s3=localStorage.getItem("Sum3");
+    document.getElementById("sum-3").innerHTML=s3;
+  }
+  q4 = localStorage.getItem("Quantity4");
+  if(q4!=0){
+    document.getElementById("four").innerHTML=count++;
+    p4=localStorage.getItem("Product4");
+    document.getElementById("product-4").innerHTML=p4;
+    document.getElementById("quantity-4").innerHTML=q4;
+    s4=localStorage.getItem("Sum4");
+    document.getElementById("sum-4").innerHTML=s4;
+  }
+  var total = localStorage.getItem("Total");
+  function format(x){
+    x=x.toString();
+    var lastThree = x.substring(x.length-3);
+    var otherNumbers = x.substring(0,x.length-3);
+    if(otherNumbers != '')
+        lastThree = ',' + lastThree;
+    var res = otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + lastThree;
+    return res;
+  }
+  document.querySelector("#total").innerHTML+=" ₹ "+format(total);
+  var discount =total-(total*5/100);
+document.querySelector("#discount").innerHTML+=" ₹ "+format(discount);
+
+  // document.getElementById("Score").innerText="Your Score is "+score;
+</script>
+</html>

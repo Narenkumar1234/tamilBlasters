@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Using Sessions</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <form action="SessionServlet" method="post">
+      <a href="SessionServlet">
+        <p>Items in the Shopping Cart</p>
+      </a>
+      <p>Select a Book</p>
+      <p>
+        <input type="radio" name="booktitle" value="Let us C" /> Let us C <br />
+        <input type="radio" name="booktitle" value="Mastering C++" /> Mastering
+        C++ <br />
+        <input
+          type="radio"
+          name="booktitle"
+          value="Introduction to Databases"
+          checked="checked"
+        />
+        Introduction to Databases <br />
+        <input
+          type="radio"
+          name="booktitle"
+          value="Network Programming"
+        />Network Programming <br />
+        <input
+          type="radio"
+          name="booktitle"
+          value="Java Complete Reference"
+        />Java Complete Reference<br />
+        <input type="submit" value="ADD TO CART" />
+      </p>
+    </form>
+  </body>
+</html>

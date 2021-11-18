@@ -1,0 +1,87 @@
+#product-section-1{
+  background-color:white;
+  box-shadow: 0.1px 0.1px 5px grey;
+  width: 70%;
+  height: 100%;
+  border-radius: 20px;
+  padding:2%;
+  margin: auto;
+}
+
+h2{
+  padding-left:29%;
+  font-size: 100%;
+  margin: 0;
+}
+
+ .image-1{
+ width: 20%;
+ display: inline-block;
+}
+
+.desc-1{
+  margin-top: 2%;
+  float: right;
+  width: 80%;
+}
+
+.Performance{
+  word-wrap: break-word;
+  margin-left: 30px;
+  width: 20%;
+  display: inline-block;
+}
+
+.Camera{
+  word-wrap: break-word;
+  width: 20%;
+  display: inline-block;
+}
+
+.Battery{
+  word-wrap: break-word;
+  width: 20%;
+  display: inline-block;
+}
+
+.Display{
+  word-wrap: break-word;
+    width: 20%;
+    display: inline-block;
+}
+
+button{
+  background-color: #8E2657;
+  box-shadow: 0.1px 0.1px 5px black;
+  margin-left: 68%;
+  border: none;
+  color: white;
+  padding: 15px 75px;
+  display: inline-block;
+  font-size: 16px;
+  margin-top:10px;
+  cursor: pointer;
+}
+
+#p-1,#p-2,#p-3,#p-4{
+display: inline-block;
+}
+
+#q-1,#q-2,#q-3,#q-4{
+  margin-top: 5%;
+  margin-left: 60%;
+}
+#q{
+  font-weight: bold;
+}
+#proceed{
+  background-color: green;
+}
+#added-1,#added-2,#added-3,#added-4{
+  margin-left: 70%;
+  color:#AE00FB;
+  font-size: 1.2rem;
+  float: left;
+   text-align: center;
+
+}

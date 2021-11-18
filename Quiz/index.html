@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz</title>
+  </head>
+<body>
+  <center>
+    <div id="stopwatch">00:00:00
+    <button id="start_stop" type="button" name="stopwatch">Start</button>
+
+  </div>
+  <h1 style= "text-align: center">Maximum Time 00:05:00 Minutes</h1>
+
+</center>
+<br>
+  <div id="quiz-section">
+    <h1 id="score"></h1>
+    <form class="Design-form" action="submit.html" method="">
+    <h1 id="quiz-1"><span>1.</span>What is your Name?</h1>
+    <input type="radio" id="option11" name="name" value="0" required>
+    <label id="option1-1" for="option1" >Narenkumar</label><br>
+    <input type="radio" id="option12" name="name" value="0" required>
+    <label id="option1-2" for="option2">NightGamer01</label><br>
+    <input type="radio" id="option13" name="name" value="0" required>
+    <label id="option1-3" for="option13">NightGamer01</label><br>
+    <input type="radio" id="option14" name="name" value="0" required>
+    <label id="option1-4" for="option14">NightGamer01</label><br>
+
+    <h1 id="quiz-2">2.What is your age?</h1>
+    <input type="radio" id="option21" name="age" value="0" required>
+    <label id="option2-1"for="option21" required>10</label><br>
+    <input type="radio" id="option22" name="age" value="0" required>
+    <label id="option2-2"for="option22">20</label><br>
+    <input type="radio" id="option23" name="age" value="0" required>
+    <label id="option2-3"for="option23">30</label><br>
+    <input type="radio" id="option24" name="age" value="0" required>
+    <label id="option2-4"for="option24">40</label><br>
+
+    <h1 id="quiz-3">3.Do you have a GF?</h1>
+    <input type="radio" id="option31" name="gf" value="0" required>
+    <label id="option3-1"for="option31">Yes</label><br>
+    <input type="radio" id="option32" name="gf" value="0" required>
+    <label id="option3-2"for="option32">No</label><br>
+    <input type="radio" id="option33" name="gf" value="0" required>
+    <label id="option3-3"for="option32">No</label><br>
+    <input type="radio" id="option34" name="gf" value="0" required>
+    <label id="option3-4"for="option32">No</label><br>
+
+    <h1 id="quiz-4">4.Do you love someone?</h1>
+    <input type="radio" id="option41" name="lv" value="0" required>
+    <label id="option4-1"for="option41">Yes</label><br>
+    <input type="radio" id="option42" name="lv" value="0" required>
+    <label id="option4-2"for="option42">No</label><br>
+    <input type="radio" id="option43" name="lv" value="0" required>
+    <label id="option4-3"for="option43">Yes</label><br>
+    <input type="radio" id="option44" name="lv" value="0" required>
+    <label id="option4-4"for="option44">No</label><br>
+
+    <h1 id="quiz-5">5.Favourite Movie Industry?</h1>
+    <input type="radio" id="option51" name="movie" value="0" required>
+    <label id="option5-1"for="option51">Hollywood</label><br>
+    <input type="radio" id="option52" name="movie" value="0" required>
+    <label id="option5-2"for="option52">Bollywood</label><br>
+    <input type="radio" id="option53" name="movie" value="0" required>
+    <label id="option5-3"for="option53">Kollywood</label><br>
+    <input type="radio" id="option54" name="movie" value="0" required required>
+    <label id="option5-4"for="option54">Mollywood</label><br>
+    <center>
+      <button id="submitButton" type="submit" onclick="return validate()">submit</button>
+      <button id="proceedButton" type="submit" >Proceed</button>
+      <button id="viewScore" type="button"><a style="color: white; text-decoration: none;" href="answer.html" >View Answers</a></button>
+    </center>
+  <p id="crtAns"></p>
+
+  </form>
+  </div>
+  <script src="shuffle.js" charset="utf-8"></script>
+</body>
+</html>

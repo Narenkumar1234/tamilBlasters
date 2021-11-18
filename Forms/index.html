@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>HTML Forms</title>
+  </head>
+  <body>
+  <center><h1>Sign Up</h1>
+  <form class="Design-form" action="submit.html" method="" onsubmit="return validate()">
+  <h4>First Name :</h4>
+  <h4 id="f"></h4>
+  <input id="firstName" type="fname" name="fname" value="" placeholder="First Name" required>
+  <h4>Last Name :</h4>
+  <h4 id="l"></h4>
+  <input id="lastName" type="lname" name="lname" value="" placeholder="Last Name" required>
+  <h4 >Email Address :</h4>
+  <h4 id="eid"></h4>
+  <input id="email" type="email" name="Email" value="" placeholder="abc@xyz.com" required>
+  <h4>Password :</h4>
+  <h4 id="p"></h4>
+  <input id="password" type="password" name="Password" value="" required>
+  <h4 id="dob">Date of Birth :</h4>
+  <input id="date" type="date" name="date" required>
+  <br>
+  <br>
+  <button id="submitButton" type="submit" >Sign Up</button>
+  <button id="buttom" type="reset">Clear</button>
+</form>
+</center>
+</body>
+<script src="Validate.js"></script>
+</html>
